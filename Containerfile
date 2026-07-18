@@ -3,7 +3,7 @@
 # https://web.archive.org/web/20241221195137/https://raw.githubusercontent.com/8go/matrix-commander/refs/tags/v8.0.4/.github/workflows/docker-publish.yml
 # https://web.archive.org/web/20241221202135/https://raw.githubusercontent.com/8go/matrix-commander/refs/tags/v8.0.4/docker/Dockerfile
 
-FROM docker.io/alpine:3.22.5
+FROM docker.io/alpine:3.24.1
 
 RUN apk add --no-cache \
         py3-atomicwrites=~1.4 \
@@ -11,14 +11,14 @@ RUN apk add --no-cache \
         py3-matrix-nio=~0.25 \
         py3-notify2=~0.3 \
         py3-olm=~3.2 \
-        py3-pillow=~11.2 \
-        py3-pip=~25.1 \
+        py3-pillow=~12.2 \
+        py3-pip=~26.1 \
         py3-xdg=~0.28 \
-        py3-peewee=~3.18 \
-        py3-emoji=~2.14 \
-        py3-markdown=~3.8 \
+        py3-peewee=~4.0 \
+        py3-emoji=~2.15 \
+        py3-markdown=~3.10 \
         py3-zope-interface=~7.2 \
-        py3-cachetools=~5.5 \
+        py3-cachetools=~7.1 \
     && pip install --no-deps --break-system-packages --no-cache-dir \
         uuid==1.30
 
