@@ -3,7 +3,7 @@
 # https://web.archive.org/web/20241221195137/https://raw.githubusercontent.com/8go/matrix-commander/refs/tags/v8.0.4/.github/workflows/docker-publish.yml
 # https://web.archive.org/web/20241221202135/https://raw.githubusercontent.com/8go/matrix-commander/refs/tags/v8.0.4/docker/Dockerfile
 
-FROM docker.io/alpine:3.22.5
+FROM docker.io/alpine:3.24.1
 
 RUN apk add --no-cache \
         py3-atomicwrites=~1.4 \
